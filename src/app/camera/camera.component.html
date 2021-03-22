@@ -1,0 +1,7 @@
+<div class="">
+  <a routerLink="/camera"> </a>
+  <p>Camera</p>
+</div>
+
+<!--add webcam component to camera page set camera view dimenstion and bind to method to check if user denied permission to use camera -->
+<webcam [height]="200" [width]="200" (initError)="handleInitError($event)"></webcam>

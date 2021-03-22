@@ -1,0 +1,29 @@
+<div class="">
+  <a routerLink="/settings"> </a>
+  <p>Settings</p>
+</div>
+
+<div>
+  <label for="state">State:</label>
+  <select name="state" id="state">
+    <option value="MN">Minnesota</option>
+    <option value="MT">Montana</option>
+    <option value="ND">North Dakota</option>
+    <option value="SD">South Dakota</option>
+  </select>
+
+  <label for="county">County:</label>
+  <select name="county" id="county">
+    <option disabled="true" value="" selected>Select a County</option>
+    <option *ngFor> </option>
+  </select>
+
+  <label for="activity">Activity:</label>
+  <select name="activity" id="activity">
+    <option disabled="true" value="" selected>Select an Activity</option>
+    <!-- Need to get the actual activity.id for the value and not just "activity.id" -->
+    <!-- <option *ngFor="let activity in activityList" value="activity.id">
+      {{activity.name}}</option -->
+    >
+  </select>
+</div>
